@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #4F46E5, #7C3AED);
+
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+#app{
+    width: 90%;
+    max-width: 420px;
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    
+
+    animation: fadeIn 0.9s ease;
+}
+#joke-container{
+    margin: 30px 0;
+}
+
+#joke{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #1F2937;
+    min-height: 100px;
+}
+
+#generate-joke{
+    border: none;
+
+    background: #4F46E5;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+#generate-joke:hover{
+    background: #4338CA;
+
+    transform: translateY(-2px);
+}
+#generate-joke:disabled{
+    background: gray;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+#generate-joke:active {
+    transform: translateY(0)
+}
+
+@keyframes fadeIn {
+     from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer{
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #6B7280;
+}
